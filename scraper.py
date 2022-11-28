@@ -6,6 +6,5 @@ Target = input("Type your target URL...")
 reqs = requests.get(url)
 soup = BeautifulSoup(reqs.text, 'html.parser')
  
-urls = []
 for link in soup.find_all('input'):
     print(link.get('href'))
