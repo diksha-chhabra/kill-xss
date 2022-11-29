@@ -68,7 +68,7 @@ def xss_scanner (url):
 
                 if  xss_payload in content:
                     print("=" * 20)
-                    print("XSS vulnerability detected or input is not filtered out!")
+                    print("XSS vulnerability or Unfiltered input detected!")
                     print("Payload: " + xss_payload)
                     print("=" * 20)
                     is_vuln = True
